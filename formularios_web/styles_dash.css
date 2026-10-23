@@ -1,0 +1,183 @@
+:root {
+    --primary: #4f46e5;
+    --secondary: #6b7280;
+    --bs-primary-rgb: 79, 70, 229;
+    --bs-secondary-rgb: 107, 114, 128;
+
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --success: #5cb85c;
+    --white: #fff;
+    --dark: #343a40;
+    --blue: #4f46e5;
+
+    --border-color: #dee2e6;
+} 
+section {
+    border: 1px solid rgba(248, 247, 247, 0.884);
+    border-radius: 15px;
+    padding: 50px 40px;
+    background-color: white;
+}
+
+section.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 25px;
+    box-shadow: 0px 4px 8px rgba(248, 248, 248, 0.791);
+    border-radius: 15px;
+}
+
+section.das-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 25px;
+}
+
+section.das-list h1,
+section.das-list form {
+    grid-column: 1 / -1;
+}
+
+section.das-list form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+section.das-list{
+    border: #6b7280;
+    border-radius: 15px;
+    box-shadow: #c7cad2d2;
+}
+
+section.das-list form button {
+    padding: 8px 14px;
+    border: 0;
+    border-radius: 15px;
+    background-color: #2563eb;
+    color: #edeaeaeb;
+    cursor: pointer;
+}
+
+section.das-list form button:hover {
+    background-color: #1d4ed8;
+}
+
+.dashboard-opcion {
+    
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    min-width: 0;
+    overflow: auto;
+}
+.dashboard-opciones{
+    padding: 15px;
+    border-radius: 15px;
+    border:1px solid rgb(215, 208, 203);
+    min-width: 0;
+    overflow: auto;
+    
+
+}
+.das-list .button{
+    background-color: #0238eb;
+    border-radius: 15px;
+
+}
+
+.das-list .dashboard-opciones img {
+    display: block;
+    max-width: 100%;
+    max-height: 45%;
+    object-fit: cover;
+}
+
+.dashboard-opciones p:last-child {
+    display: inline-block;
+    margin: 8px 0;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+.das-list > .dashboard-opciones:nth-of-type(1) p:last-child,
+.das-list > .dashboard-opciones:nth-of-type(2) p:last-child,
+.das-list > .dashboard-opciones:nth-of-type(4) p:last-child,
+.das-list > .dashboard-opciones:nth-of-type(7) p:last-child,
+.das-list > .dashboard-opciones:nth-of-type(8) p:last-child {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.das-list > .dashboard-opciones:nth-of-type(3) p:last-child {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+.das-list > .dashboard-opciones:nth-of-type(6) p:last-child {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.das-list > .dashboard-opciones:nth-of-type(5) p:last-child {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.dashboard-opcion:nth-child(2) {
+    background: #0238eb;
+}
+
+.dashboard-opcion:nth-child(4) {
+    background: #0aeb07;
+}
+
+/* Texto final  */
+.dashboard-opcion p:last-child {
+    font-weight: 600;
+}
+
+.dashboard-opcion:nth-child(1) p:last-child { color: #15803d; }
+.dashboard-opcion:nth-child(2) p:last-child { color: #f0eff7; }
+.dashboard-opcion:nth-child(3) p:last-child { color: #dc2626; }
+.dashboard-opcion:nth-child(4) p:last-child { color: #f9fcfb; }
+.dashboard-opcion:nth-child(5) p:last-child { color: #c2410c; }
+
+
+.botones{
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 15px;
+    
+}
+
+.botones select {
+    width: 200px;
+}
+
+.botones > div:first-of-type {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 16px;
+}
+
+.botones > div:last-of-type {
+    margin-left: auto;
+}
+
+.botones button {
+    padding: 8px 14px;
+    border: 0;
+    border-radius: 15px;
+    background-color: #2563eb;
+    color: #fff;
+    cursor: pointer;
+}

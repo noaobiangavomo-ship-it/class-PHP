@@ -1,0 +1,86 @@
+main{
+    padding: 20px;
+    background-color: #f8f9fa;
+    width: 100%;             /*  ocupe todo el ancho de la pantalla */
+    max-width: 1400px;       /* Limita el ancho máximo en pantallas gigantes para que no se desarme */
+    margin: 0 auto;   /* Centra el contenido en la pantalla */
+}
+h2{
+    text-align: center;
+    color: #8b0000;
+}
+p{
+    color:#4a1521;
+}
+h3{
+    color: #6b6b6b;
+}
+section {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 50px 40px;
+    background-color: white;
+}
+
+section.peliculas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*1fr 1fr 1fr 1fr*/
+    grid-gap: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.791);
+}
+section.peliculas > .pelis {
+    border: 1px solid #8b0000;
+    border-radius: 15px;
+    padding: 25px 15px;
+    position: relative;
+    box-shadow: #c81616a6;
+    
+}
+
+section.peliculas > .pelis img {
+    width: 250px;
+    height: auto;
+    object-fit: cover
+    
+
+}
+
+section.peliculas > .pelis .titulo {
+    width: fit-content;
+    padding: 5px 15px;
+    background-color: coral;
+    color: white;
+    border-radius: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+section.formulario  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*1fr 1fr 1fr 1fr*/
+    grid-gap: 25px;
+    border-radius: 15px;
+    padding: 25px 15px;
+    box-shadow: rgba(0, 0, 0, 0.819);
+}
+h4,h1{
+    text-align: center;
+    color: #8b0000;
+}
+main section {
+  margin-bottom: 50px; /* Crea un espacio de 50px debajo de cada sección */
+}
+
+/*  Quita el espacio a la última sección para no generar scroll innecesario */
+main section:last-child {
+  margin-bottom: 0;
+}
+
+.pelis p.disponible {
+    color: rgb(0, 45, 128) ;
+    font-weight: bold;
+}
+.pelis p.no-disponible {
+    color: red;
+    font-weight: bold;
+}

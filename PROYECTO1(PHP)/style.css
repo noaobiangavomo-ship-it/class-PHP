@@ -1,0 +1,203 @@
+:root {
+    --fondo: #111827;
+    --superficie: #1f2937;
+    --texto: #f9fafb;
+    --texto-suave: #cbd5e1;
+    --acento: #e11d48;
+    --acento-hover: #be123c;
+    --borde: #374151;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/*  mantiene el contenido centrado y legible en pantallas grandes. */
+main {
+    width: auto;
+    min-height: auto;
+    margin: 2px auto;
+}
+
+header,
+footer {
+    padding: 4px;
+    background: #0b1020;
+}
+header{
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: max-content;
+    margin: 25px;
+    padding: 75px;
+
+}
+
+footer {
+    margin-top: 3px;
+    color: var(--texto-suave);
+    text-align: center;
+}
+
+/*  presenta los enlaces de navegación con espacio entre ellos. */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    padding: 4px;
+    background: var(--superficie);
+}
+
+a {
+    color: #fda4af;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*  adapta la cuadrícula de películas al ancho disponible. */
+.peliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.25rem;
+    margin: 20px;
+}
+.tarjeta {
+    overflow: hidden; /*para que no haya desbordamiento */
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    background: var(--superficie);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 20%);
+}
+.tarjeta:hover{
+    background-color: #0c77e1;
+}
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover;
+}
+
+.tarjeta h3,
+.tarjeta p {
+    margin: 10px;
+}
+
+/*  hace que formularios y botones se vean igual en todas las páginas. */
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 520px;
+    margin:10px;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--borde);
+    border-radius: 90px;
+    font: inherit;
+}
+
+input,
+select,
+textarea {
+    
+    color: #111827;
+}
+
+button {
+    border: 0;
+    background: var(--acento);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: var(--acento-hover);
+}
+
+
+/* css para login y registro
+/* ...existing code... */
+
+/* Centra y presenta los formularios como una tarjeta. */
+form.form {
+    width: 50%;
+    max-width: none;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    background: var(--superficie);
+    box-shadow: 0 12px 30px rgb(0 0 0 / 30%);
+}
+
+/* Separa cada campo y coloca su etiqueta encima del cuadro. */
+.form-div {
+    display: grid;
+    gap: 5px;/* es el separado*/
+}
+
+.form-label {
+    color: var(--texto);
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--borde);
+    border-radius: 7px;
+    background: #fff;
+    color: #111827;
+}
+
+.form-control:focus {
+    outline: 3px solid rgb(225 29 72 / 25%);
+    border-color: var(--acento);
+}
+
+/* Destaca el botón de acceso. */
+.form button {
+    margin-top: 0.4rem;
+}
+
+/* Centra el texto de registro y el enlace para iniciar sesión. */
+.form p {
+    margin: 0.5rem 0;
+    color: var(--texto-suave);
+    text-align: center;
+}
+
+.form a {
+    color: #fda4af;
+    font-weight: 600;
+}
+
+.form a:hover {
+    color: #fff;
+}
+
+
+
+
+

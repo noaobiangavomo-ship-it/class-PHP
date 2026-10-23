@@ -1,0 +1,129 @@
+:root {
+    --negro: #000;
+    --amarillo: #ffdf00;
+    --blanco: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background: var(--negro);
+    color: var(--blanco);
+    font-family: Arial, sans-serif;
+}
+
+header,
+nav,
+main,
+section {
+    max-width: 1100px;
+    margin: 0 auto 28px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--amarillo);
+}
+
+a {
+    color: var(--amarillo);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--blanco);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--amarillo);
+}
+
+.revista,
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+    gap: 22px;
+    
+}
+
+.hero {
+    align-items: center;
+    padding: 30px;
+    border-radius: 14px;
+    background: var(--negro);
+    margin: 0px 20px 20px 20px;
+    text-align: center;
+}
+
+.tarjeta {
+    display: grid;
+    grid-template-columns: minmax(120px, 38%) 1fr;
+    grid-template-rows: repeat(8, auto);
+    gap: 20px 18px;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid var(--amarillo);
+    border-radius: 14px;
+    background: var(--negro);
+    box-shadow: 0 0 12px var(--amarillo);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 24px var(--amarillo);
+}
+
+.tarjeta img {
+    grid-column: 1;
+    grid-row: 1 / span 8;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.tarjeta h3,
+.tarjeta p {
+    grid-column: 2;
+    margin: 0;
+}
+
+.tarjeta h3 {
+    align-self: end;
+}
+
+.tarjeta p {
+    color: var(--blanco);
+    line-height: 1.4;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    padding: 10px 16px;
+    border: 1px solid var(--amarillo);
+    border-radius: 8px;
+    background: var(--amarillo);
+    color: var(--negro);
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--negro);
+    color: var(--amarillo);
+}
