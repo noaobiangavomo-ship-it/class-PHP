@@ -1,0 +1,83 @@
+:root {
+    --negro: #000;
+    --amarillo: #ffdf00;
+    --blanco: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    display: grid;
+    place-content: center;
+    gap: 20px;
+    background: var(--negro);
+    color: var(--blanco);
+    font-family: Arial, sans-serif;
+}
+
+.form {
+    width: min(100%, 380px);
+    padding: 50px;
+    border: 1px solid var(--amarillo);
+    border-radius: 18px;
+    background: var(--negro);
+    box-shadow: 0 0 22px rgb(255 223 0 / 25%);
+    justify-content: center;
+
+}
+
+.form {
+    display: block;
+    margin-bottom: 0;
+    color: var(--amarillo);
+    font-size: 1rem;/*rem es una unidad de tamaño relativa el 1 es 16px, 1.5 24px*/
+    text-align: center;
+    
+}
+
+.caja {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--amarillo);
+    border-radius: 8px;
+    outline: none;
+    background: var(--negro);
+    color: var(--blanco);
+    font-size: 0.9rem;
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--amarillo);
+    border-radius: 8px;
+    background: var(--amarillo);
+    color: var(--negro);
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    background: var(--negro);
+    color: var(--amarillo);
+}
+

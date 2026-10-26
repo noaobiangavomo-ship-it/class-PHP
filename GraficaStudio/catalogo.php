@@ -1,8 +1,8 @@
 <?php
 
 require_once "confing.php";
-// CAMBIO: corregir el nombre de la variable usada para filtrar por profesión.
-$profesionElegida = "contable";
+// para filtrar por profesión.
+$profesionElegida = "Modelo";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -26,7 +26,7 @@ $profesionElegida = "contable";
         ?>
     </section>
 
-    <h2>Revistas de  </h2>
+    <h2>Modelos</h2>
 
     <section class="revistas">
         <?php
@@ -38,5 +38,6 @@ $profesionElegida = "contable";
         ?>
     </section>
 </main>
+<?php include_once __DIR__ .  "/partials/footer.php";?>
 </body>
 </html>

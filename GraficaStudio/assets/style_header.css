@@ -15,4 +15,9 @@
     border-radius: 30px;
     border: 1px solid yellow;
     box-shadow: yellow;
+    text-decoration: none;
+}
+
+.nav-stylo a {
+    text-decoration: none;
 }

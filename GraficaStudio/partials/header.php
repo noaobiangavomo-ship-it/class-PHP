@@ -5,7 +5,7 @@
     <a href="catalogo.php">Catálogo</a>
     <?php if (siEstaLogeado()): ?>
         <a href="dashboard.php">Panel de control</a>
-        <span>Bienvenido, <?= htmlspecialchars($_SESSION["username"], ENT_QUOTES, "UTF-8") ?></span>
+        <span>Bienvenido, <?= $_SESSION["username"] ?></span>
         <a href="controllers/logout.php">Cerrar sesión</a>
         <?php if (isAdmin()): ?>
             <a href="add_item.php">Añadir revista</a>

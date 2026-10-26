@@ -9,14 +9,14 @@ if (!siEstaLogeado()) {
 }
 
 $revistas = $_SESSION["revista"];
-$nombreUsuario = htmlspecialchars($_SESSION["user"]["username"], ENT_QUOTES, "UTF-8");
+$nombreUsuario = $_SESSION["user"]["username"];
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel de control | <?= htmlspecialchars(APP_NAME, ENT_QUOTES, "UTF-8") ?></title>
+    <title>Panel de control | <?= APP_NAME ?></title>
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="./assets/style_header.css">
     <link rel="stylesheet" href="./assets/styles.css">
@@ -36,16 +36,17 @@ $nombreUsuario = htmlspecialchars($_SESSION["user"]["username"], ENT_QUOTES, "UT
             <p><a href="add_item.php">Añadir una revista</a></p>
         <?php endif; ?>
 
-        <h2>Revistas (<?= count($revistas) ?>)</h2>
+        <h2>Revistas <?= count($revistas) ?></h2>
         <section class="revistas">
             <?php if ($revistas): ?>
-                <?php foreach ($revistas as $revista): ?>
-                    <?php pintarTarjeta($revista); ?>
+                <?php foreach ($revistas as $revista): 
+                    pintarTarjeta($revista); ?>
                 <?php endforeach; ?>
             <?php else: ?>
                 <p>Aún no hay revistas en el catálogo.</p>
             <?php endif; ?>
         </section>
     </main>
+<?php include_once __DIR__ .  "/partials/footer.php";?>
 </body>
 </html>

@@ -30,6 +30,6 @@ require_once "confing.php";
         endif;
         ?>
 </section>
-
+ <?php include_once __DIR__ .  "/partials/footer.php";?>
 </body>
 </html>
