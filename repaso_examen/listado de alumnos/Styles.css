@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #263238;
+}
+
+.alumnos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 0 2px 6px #ddd;
+}
+
+.calificacion {
+    color: #1976d2;
+    font-weight: bold;
+}
+
+.suspenso {
+    background-color: #ffe5e5;
+    border-left: 5px solid #d32f2f;
+}
+
+.resumen {
+    background-color: white;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+}

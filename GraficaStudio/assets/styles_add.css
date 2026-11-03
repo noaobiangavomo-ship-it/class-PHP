@@ -32,7 +32,7 @@ body {
 }
 
 .form {
-    display: block;
+    display: bloc;
     margin-bottom: 0;
     color: var(--amarillo);
     font-size: 1rem;/*rem es una unidad de tamaño relativa el 1 es 16px, 1.5 24px*/
