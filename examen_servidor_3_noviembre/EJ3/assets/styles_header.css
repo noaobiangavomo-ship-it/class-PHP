@@ -1,0 +1,13 @@
+.encabezado{
+    padding: 5px;
+    margin: auto;
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+.encabezado-1{
+    margin:1px;
+    padding:2px;
+    color:rgba(103, 100, 100, 0.779);
+    text-align: center;
+}

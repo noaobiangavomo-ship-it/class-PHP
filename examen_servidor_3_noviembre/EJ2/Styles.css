@@ -1,0 +1,36 @@
+ body {
+            background: #f5f7fb;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        .inventario {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .table-danger {
+            background-color: #f8d7da;
+            color: #842029;
+        }
+
+        .resumen {
+            margin: 20px 0;
+            font-size: 1.05rem;
+        }
+
+        .comprobacion {
+            margin-top: 20px;
+            font-weight: 600;
+            color: #0b2e4f;
+        }
